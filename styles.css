@@ -358,7 +358,7 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
     
     .navbar_item, .navbar_img {
         display: none;
