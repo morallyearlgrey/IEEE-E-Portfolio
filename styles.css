@@ -175,7 +175,7 @@ body.no-scroll {
     gap: 10vw;
 }
 
-.hero_images_container {
+#hero_images_container {
     position: relative;
 
 }
@@ -267,8 +267,7 @@ To upload and replace Gudetama with your profile picture:
 .about_container {
     display: flex;
     flex-direction: row;
-    height: 80%;
-    height: 100vh;
+    height: fit-content;
     padding: 10vh;
     gap: 10vw;
 
@@ -347,6 +346,93 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
+.projects_heading {
+    color: var(--sunset);
+    font-size: 9vh;
+    font-family: heading-font;
+
+}
+
+.projects_description {
+    color: var(--antique-white);
+    font-size: 2vh;
+    font-family: body-font;
+    margin-top: 2vh;
+
+}
+
+.projects_container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 10vh;
+    gap: 5vw;
+
+}
+
+.projects_grid_container {
+    padding: 20px;
+}
+
+#projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: var(--ghost-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project_image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.project_info {
+    padding: 20px;
+}
+
+.project_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: var(--night-sky);
+    font-family: subheading-font;
+}
+
+.project_description {
+    font-size: 0.9rem;
+    color: var(--outer-space);
+    margin-bottom: 10px;
+    font-family: body-font;
+}
+
+.project_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skill {
+    font-size: 0.8rem;
+    background-color: var(--powder-blue);
+    color: var(--night-sky);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: body-font;
+}
+
 @media(min-width: 769px) {
     body.no-scroll {
         overflow: visible;
@@ -362,6 +448,7 @@ To upload and replace Gudetama with your profile picture:
     
     .navbar_item, .navbar_img {
         display: none;
+       
     }
 
     .navbar_container {
@@ -369,12 +456,14 @@ To upload and replace Gudetama with your profile picture:
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+   
+
     }
 
     
     #navbar_logo {
         left: 30px;
+
     }
 
     #navbar_mobile {
@@ -388,6 +477,7 @@ To upload and replace Gudetama with your profile picture:
         appearance: none;
         border: none;
 
+
     }
 
     #navbar_mobile:hover {
@@ -397,88 +487,84 @@ To upload and replace Gudetama with your profile picture:
 
     #navbar_mobile_container {
         display: none;
-
     }
-
+    
     #navbar_mobile_container.active {
         display: flex;
-        border: solid red 1px;
-        background: #000000;
-        height: 100vh;
-        width: 70vw;
-       
-        position: absolute;
-        top: 0;
-        left: 0;
-      
+        background-color: var(--oblivion);
+        height: 80vh;
+        width: 100vw;
         flex-direction: column;
         align-items: center;
-        z-index: 100;
-
+        z-index: 1000;
+        position: fixed;
+        top: 100px;
+        left: 0;
     }
 
-    .hero_container, .about_container, .about_image_carousel_container {
+    .hero_container, .about_container {
         display: flex;
         flex-direction: column;
-        padding-right: 9vw;
-        padding-left: 4vw;
-        padding-top: 4vw;
-        padding-bottom: 4vw;
+        padding: 4vw;
+        padding-right: 7vw;
         
     }
 
-    .about_container {
-        margin-bottom: 80vh;
-
-    }
+   
 
 
     .hero_box {
         height: 30vh;
         width: 90%;
-        z-index: 5;
-
+        
     }
 
     .hero_profile_picture {
         height: 20vh;
         width: 20vh;
         bottom: -5vw;
-        z-index: 5;
+        
 
     }
 
-    .hero_images_container {
+    #hero_images_container {
         display: flex;
         flex-direction: column;
-        z-index: 5;
+       
+    }
+
+    #hero_images_container.active {
+        display: none;
     
     }
 
     .hero_summary_container, .about_text_container {
         width: 100%;
         gap: 15px;
+  
     }
     
     #hero_learn_more_button {
         width: 40vw;
+  
 
     }
 
     #about_image_carousel  {
         width: 70vw;
-        
+
     }
 
     .about_image_carousel_buttons {
         gap: 20vw;
-       
+
     }
 
     #about_left_button, #about_right_button {
         height: 7vh;
         width: 7vw;
         background-size: cover;
+
 
     }
 
