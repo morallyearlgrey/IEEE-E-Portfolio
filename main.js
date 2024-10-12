@@ -40,42 +40,49 @@ Add and delete projects as needed by:
 6. In the title section of your specific project, change the title as needed!
 7. In the description section of your specific project, change the description as needed!
 8. In the skills section of your specific project, add or change skills you used by adding a comma to the last skill listed and then adding your skill in quotations
+9. In the link section of your specific project, paste in the link you want the user to redirect to and place quotations around it
 */
 let projects = [
     {
         title: "Project 1",
         description: "A brief description of Project 1.",
         image: "../images/chocolate_gudetama.png",
-        skills: ["Skill1", "Skill2", "Skill3"]
+        link: "#",
+        skills: ["Skill1", "Skill2", "Skill3"],
     },
     {
         title: "Project 2",
         description: "A brief description of Project 2.",
         image: "../images/roll_gudetama.png",
+        link: "#",
         skills: ["Skill1", "Skill2", "Skill3", "Skill4"]
     },
     {
         title: "Project 3",
         description: "A brief description of Project 3.",
         image: "../images/tired_gudetama.png",
+        link: "#",
         skills: ["Skill1", "Skill2"]
     },
     {
         title: "Project 4",
         description: "A brief description of Project 4.",
         image: "../images/chocolate_gudetama.png",
+        link: "#",
         skills: ["Skill1"]
     },
     {
         title: "Project 5",
         description: "A brief description of Project 5.",
         image: "../images/roll_gudetama.png",
+        link: "#",
         skills: ["Skill1", "Skill2", "Skill3"]
     },
     {
         title: "Project 6",
         description: "A brief description of Project 6.",
         image: "../images/tired_gudetama.png",
+        link: "#",
         skills: ["Skill1", "Skill2", "Skill3", "Skill4", "Skill5"]
     }
 ];
@@ -90,6 +97,7 @@ function createProjectElement(project) {
         <img src="${project.image}" alt="${project.title}" class="project_image">
         <div class="project_info">
             <h2 class="project_title">${project.title}</h2>
+            <a href="${project.link}" class="project_description">Link to project</a>
             <p class="project_description">${project.description}</p>
             <div class="project_skills">
                 ${project.skills.map(skill => `<span class="skill">${skill}</span>`).join("")}
@@ -172,7 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const aboutSection = document.querySelector("#about");
 
         learnMoreBtn.addEventListener("click", () => { 
-            console.log("button clicked");
             aboutSection.scrollIntoView({ behavior: "smooth" });
         });
 

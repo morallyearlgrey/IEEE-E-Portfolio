@@ -305,7 +305,7 @@ To upload and replace Gudetama with your profile picture:
 }
 
 #about_image_carousel {
-    height: 100%;
+    height: 40vw;
     width: 40vw;
     border-radius: 25px;
     background-size: cover;
@@ -329,7 +329,7 @@ To upload and replace Gudetama with your profile picture:
     appearance: none;
 
     height: 4vh;
-    width: 2vw;
+    width: 4vh;
 
 }
 
@@ -342,7 +342,7 @@ To upload and replace Gudetama with your profile picture:
     appearance: none;
 
     height: 4vh;
-    width: 2vw;
+    width: 4vh;
 
 }
 
@@ -444,6 +444,20 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
+@media (max-width: 460px) {
+    .hero_name, .about_heading {
+        font-size: 13vw;
+    }
+
+    #hero_skills, #hero_learn_more_button {
+        font-size: 7vw;
+    }
+
+    .hero_summary, .about_body {
+        font-size: 4vw;
+    }
+}
+
 @media (max-width: 768px) {
     
     .navbar_item, .navbar_img {
@@ -507,11 +521,11 @@ To upload and replace Gudetama with your profile picture:
         flex-direction: column;
         padding: 4vw;
         padding-right: 7vw;
+        width: fit-content;
         
     }
-
-   
-
+    
+    
 
     .hero_box {
         height: 30vh;
@@ -530,6 +544,7 @@ To upload and replace Gudetama with your profile picture:
     #hero_images_container {
         display: flex;
         flex-direction: column;
+        width: 83vw;
        
     }
 
@@ -539,13 +554,16 @@ To upload and replace Gudetama with your profile picture:
     }
 
     .hero_summary_container, .about_text_container {
-        width: 100%;
+        width: fit-content;
         gap: 15px;
   
     }
     
     #hero_learn_more_button {
-        width: 40vw;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        font-size: 5vw;
   
 
     }
@@ -561,9 +579,9 @@ To upload and replace Gudetama with your profile picture:
     }
 
     #about_left_button, #about_right_button {
-        height: 7vh;
+        height: 7vw;
         width: 7vw;
-        background-size: cover;
+        background-size:cover;
 
 
     }
