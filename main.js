@@ -90,6 +90,16 @@ if (typeof window != 'undefined') {
             aboutSection.scrollIntoView({ behavior: "smooth" });
         });
 
+        const menu = document.querySelector("#navbar_mobile_container");
+        const menuBtn = document.querySelector("#navbar_mobile");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            document.body.classList.toggle("no-scroll");
+
+
+        });
+
     };
 
 }
