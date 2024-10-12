@@ -183,24 +183,33 @@ document.addEventListener('DOMContentLoaded', function() {
             aboutSection.scrollIntoView({ behavior: "smooth" });
         });
 
+    
         const menu = document.querySelector("#navbar_mobile_container");
         const menuBtn = document.querySelector("#navbar_mobile");
         const heroImages = document.querySelector("#hero_images_container");
 
-        menuBtn.addEventListener("click", () => {
-            menu.classList.toggle("active");
-            heroImages.classList.toggle("active");
-            document.body.classList.toggle("no-scroll");
-        });
+        if (menuBtn) {
+            menuBtn.addEventListener("click", () => {
+                console.log("Menu button clicked");
+                menu.classList.toggle("active");
+                heroImages.classList.toggle("active");
+                document.body.classList.toggle("no-scroll");
+            });
+        } else {
+            console.error("#navbar_mobile not found");
+        }
 
         const mobileMenuLinks = menu.querySelectorAll("#navbar_mobile_link");
         mobileMenuLinks.forEach(link => {
             link.addEventListener("click", () => {
+                console.log("why wont you fucking work");
                 menu.classList.remove("active");
                 heroImages.classList.remove("active");
                 document.body.classList.remove("no-scroll");
             });
         });
+
+ 
 
         renderProjects();
 
