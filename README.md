@@ -36,7 +36,7 @@ To get started with your e-portfolio, follow these simple steps:
    2) **Scroll to the GitHub Pages Section**: Scroll down to the "Pages" section.
    3) **Select the Source Branch**: Under "Source," select the branch you want to use for GitHub Pages (usually main) and choose the / (root) folder.
    4) **Save Changes**: Click "Save" to apply your settings.
-   5) **Access Your Site**: After a few minutes, your site should be available at `https://<username>.github.io/<repository-name>/pages/index.html`. Replace <username> with your GitHub username and <repository-name> with your repository name.
+   5) **Access Your Site**: After a few minutes, your site should be available at `https://<username>.github.io/<repository-name>/pages/index.html`. Replace `<username>` with your GitHub username and `<repository-name>` with your repository name.
 
 
 ## Instructions for Uploading Fonts and Images
