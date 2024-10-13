@@ -6,21 +6,14 @@ Hello! This is an E-Portfolio Website Template designed specifically for IEEE me
 ## Features
 - **Customizable Design**: Easily modify the design elements to reflect your personal style.
 - **User-Friendly Structure**: The template is organized to make it easy for you to add your own content.
-- **Readable Instructions**: Inside each file are commented-out instructions for you to follow.
+- **Easy-to-Understand Instructions**: Inside each file are commented-out instructions for you to follow.
 
 ## Getting Started
 To get started with your e-portfolio, follow these simple steps:
 
 1. **Clone the GitHub Repository**: To get your own copy of this template, you can clone it! On the top right corner, click "Use this template" and then "Create a new repository" and then name it whatever you would like.
 
-2. 3. **Modify Content**: 
-   - `index.html`
-   - `navbar.html`
-   - `project.html`
-   - `styles.css`
-   - `main.js`
-
-3. **Make Modifications to the Template**: If you prefer to make changes directly on GitHub, read this section carefully! You can modify the contents of the following files:
+2. **Make Modifications to the Template**: If you prefer to make changes directly on GitHub, read this section carefully! You can modify the contents of the following files:
    - `index.html`
    - `navbar.html`
    - `project.html`
