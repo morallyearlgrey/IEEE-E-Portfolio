@@ -32,8 +32,8 @@ To get started with your e-portfolio, follow these simple steps:
 
 3. **Hosting Your E-Portfolio via GitHub Pages**: Once your e-portfolio is ready, you can host it online using GitHub Pages. Here’s how:
 
-   1) **Go to Repository Settings**: Navigate to your repository on GitHub and click on the "Settings" tab.
-   2) **Scroll to the GitHub Pages Section**: Scroll down to the "Pages" section.
+   1) **Go to Repository Settings**: Navigate to your repository on GitHub and click on the "Settings" tab (this should be located on the top of your screen to the right of "Insights").
+   2) **Scroll to the GitHub Pages Section**: Scroll down to the "Pages" section (this should be located in the column to the left).
    3) **Select the Source Branch**: Under "Source," select the branch you want to use for GitHub Pages (usually main) and choose the / (root) folder.
    4) **Save Changes**: Click "Save" to apply your settings.
    5) **Access Your Site**: After a few minutes, your site should be available at `https://<username>.github.io/<repository-name>/pages/index.html`. Replace `<username>` with your GitHub username and `<repository-name>` with your repository name.
