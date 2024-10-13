@@ -1,6 +1,19 @@
 /* STYLE SHEET */
+/*
+This is where you can style/customize all the components located on your portfolio website! For example, you can change the color of a button or change the heading font!
 
-/* FONT SECTION */
+Quick Modifications Key:
+Here is a list of sections you can modify/customize! Use CTRL+F or CMD+F to find these sections to modify them!
+
+MODIFICATION SECTION: FONT SECTION
+MODIFICATION SECTION: COLOR CODES
+MODIFICATION SECTION: NAVBAR ICON COLORS
+MODIFICATION SECTION: PROFILE PICTURE SECTION
+MODIFICATION SECTION: MOBILE NAVBAR ICON COLORS
+
+*/
+
+/* MODIFICATION SECTION: FONT SECTION */
 /* 
 This is where all the style sheet information for the fonts goes!
 
@@ -12,7 +25,6 @@ To add a new font and replace the heading-font, subheading-font, or body-font fo
 5. Keep the font-family the same!
 6. Replace the src section's url with ./fonts/ and then your font's name (including the .ttf)!
 */
-
 /* HEADING FONT */
 @font-face {
     font-family: heading-font;
@@ -33,7 +45,7 @@ To add a new font and replace the heading-font, subheading-font, or body-font fo
 
 }
 
-/* COLOR CODES */
+/* MODIFICATION SECTION: COLOR CODES */
 /*
 The :root section is where you put all your HEX color codes! I'd recommend using Coolors to create really aesthetic color palettes!
 
@@ -61,7 +73,6 @@ Then, CTRL+F or CMD+F for references to --oblivion and replace it with --ieee-ye
     --chestnut: #904735;
 }
 
-/* FEATURES OF WHOLE WEBSITE */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -147,20 +158,31 @@ body.no-scroll {
 
 }
 
+/* MODIFICATION SECTION: NAVBAR ICON COLORS */
+/*
+The images uploaded to this basic template are automatically orange, but good news! You can use the attribute filter to change the hue of the icons!
+
+To change the color hue of the icons:
+1. In hue-rotate in the filter section, edit the amount of degrees you want to change the hue by in deg (max: 360deg, min: 0deg)
+
+To make the hue grayscale: 
+1. Cut filter: hue-rotate(0deg) and replace it with filter: grayscale(100%);
+
+*/
 .navbar_item_resume {
     background-image: url("./images/resume.png");
-    filter: hue-rotate(0deg)
+    filter: hue-rotate(0deg);
 
 }
 
 .navbar_item_github {
     background-image: url("./images/github.png");
-    filter: hue-rotate(0deg)
+    filter: hue-rotate(0deg);
 }
 
 .navbar_item_linkedin {
     background-image: url("./images/linkedin.png");
-    filter: hue-rotate(0deg)
+    filter: hue-rotate(0deg);
 
 }
 
@@ -188,7 +210,7 @@ body.no-scroll {
 
 }
 
-/* PROFILE PICTURE SECTION */
+/* MODIFICATION SECTION: PROFILE PICTURE SECTION */
 /*
 This is where your profile picture goes! 
 
@@ -433,18 +455,36 @@ To upload and replace Gudetama with your profile picture:
     font-family: body-font;
 }
 
+.navbar_mobile_all_links {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 100vw;
+
+}
+
+#navbar_mobile_link {
+    font-family: body-font;
+    color: var(--antique-white);
+    appearance: none;
+    text-decoration: none;
+
+}
+
 @media(min-width: 769px) {
     body.no-scroll {
         overflow: visible;
     }
 
-    #navbar_mobile_container, #navbar_mobile {
+    #navbar_mobile_container, #navbar_mobile_button {
         display: none;
+
     }
 
 }
 
-@media (max-width: 460px) {
+@media (max-width: 479px) {
     .hero_name, .about_heading, .projects_heading {
         font-size: 13vw;
     }
@@ -456,13 +496,93 @@ To upload and replace Gudetama with your profile picture:
     .hero_summary, .about_body, .projects_description {
         font-size: 4vw;
     }
+
+    .navbar_mobile_all_links {
+        margin-top: 18vh;
+        gap: 10vh;
+        
+        margin-left: 20vw;
+
+    }
+
+    #navbar_mobile_link {
+        font-size: 5vw;
+
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .navbar_mobile_all_links {
+        margin-top: 20vh;
+        gap: 7vh;
+        margin-left: 12vw;
+
+    }
+
+    #navbar_mobile_link {
+        font-size: 4vw;
+
+    }
+
 }
 
 @media (max-width: 768px) {
-    
     .navbar_menu {
         display: none;
+
+    }
+
+    
+    /* MODIFICATION SECTION: MOBILE NAVBAR ICON COLORS */
+    /*
+    The images uploaded to this basic template are automatically orange, but good news! You can use the attribute filter to change the hue of the icons!
+
+    To change the color hue of the icons:
+    1. In hue-rotate in the filter section, edit the amount of degrees you want to change the hue by in deg (max: 360deg, min: 0deg)
+
+    To make the hue grayscale: 
+    1. Cut filter: hue-rotate(0deg) and replace it with filter: grayscale(100%);
+    */
+    #navbar_mobile_button {
+        display: flex;
+        background-image: url("./images/mobile_menu.png");
+        filter: hue-rotate(0deg);
+
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        background-size: 100%;
+        position: absolute;
+        right: 30px;
+        appearance: none;
+        border: none;
+
+    }
+    
+
+    #navbar_logo {
+        left: 30px;
+
+    }
+
+    #navbar_mobile_container {
+        display: none;
+        flex-direction: column;
+        background-color: var(--oblivion);
+        color: var(--antique-white);
+        height: 90vh;
+        width: 100vw;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
        
+    }
+
+    #navbar_mobile_container.active {
+        display: flex;
     }
 
     .navbar_container {
@@ -475,24 +595,6 @@ To upload and replace Gudetama with your profile picture:
     }
 
     
-    #navbar_logo {
-        left: 30px;
-
-    }
-
-    #navbar_mobile {
-        background-image: url("./images/mobile_menu.png");
-        height: 50px;
-        width: 50px;
-        background-size: 100%;
-        background-color: transparent;
-        position: absolute;
-        right: 30px;
-        appearance: none;
-        border: none;
-
-
-    }
 
     #navbar_mobile:hover {
         cursor: pointer;
@@ -503,16 +605,7 @@ To upload and replace Gudetama with your profile picture:
         display: none;
     }
     
-    #navbar_mobile_container.active {
-        display: block;
-        background-color: var(--oblivion);
-        height: 80vh;
-        width: 100vw;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        
-    }
+   
 
     .hero_container, .about_container {
         display: flex;
@@ -580,10 +673,23 @@ To upload and replace Gudetama with your profile picture:
     #about_left_button, #about_right_button {
         height: 7vw;
         width: 7vw;
-        background-size:cover;
+        background-size: cover;
 
 
     }
+
+    .projects_container {
+        padding: 10vw;
+    
+    }
+
+    #projectsGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    
 
 }
 

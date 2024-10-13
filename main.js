@@ -1,7 +1,19 @@
 // SCRIPT SHEET
+/*
+This is where all our backend code for our website is located! This makes those components on that pretty interface actually come to life and be able to have cool functionalities (i.e. the image carousel, the learn more button, etc)! In this section, you can modify the skills you want to showcase underneath your name, the images you want in that image carousel, and the projects you want listed
+
+Quick Modifications Key:
+Here is a list of sections you can modify/customize! Use CTRL+F or CMD+F to find these sections to modify them!
+
+MODIFICATION SECTION: SKILLS SECTION
+MODIFICATION SECTION: IMAGES SECTION
+MODIFICATION SECTION: PROJECTS SECTION
+
+*/
+
 "use strict";
 
-// SKILLS SECTION
+// MODIFICATION SECTION: SKILLS SECTION
 /* 
 These skills appear after the words "I AM"! They will show up underneath your name and cycle every 3 seconds!
 
@@ -11,7 +23,7 @@ Add and delete skills as needed in this skills array by:
 */
 let skills = ["AN ELECTRICAL ENGINEER", "A DEVELOPER", "A DESIGNER"];
 
-// IMAGES SECTION
+// MODIFICATION SECTION: IMAGES SECTION
 /*
 These images are located in the image carousel in the About Me section! You can cycle through the images with the right or left arrow
 
@@ -27,7 +39,7 @@ Ensure that your image's name in this file matches what you uploaded to the imag
 let images = ["../images/chocolate_gudetama.png", "../images/roll_gudetama.png", "../images/tired_gudetama.png"];
 
 
-// PROJECTS SECTION
+// MODIFICATION SECTION: PROJECTS SECTION
 /* 
 This is where your projects go! They show up as boxes on the Projects page! Each of them contains a title, a description, an image, and a list of skills you used during the project!
 
@@ -87,8 +99,6 @@ let projects = [
     }
 ];
 
-// JAVASCRIPT TO MAKE THE PAGE DYNAMIC
-// You don't need to worry about what is below!
 function createProjectElement(project) {
     const projectElement = document.createElement("div");
     projectElement.className = "project";
@@ -120,7 +130,6 @@ function renderProjects() {
         projectsGrid.appendChild(projectElement);
     });
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -182,34 +191,6 @@ document.addEventListener('DOMContentLoaded', function() {
         learnMoreBtn.addEventListener("click", () => { 
             aboutSection.scrollIntoView({ behavior: "smooth" });
         });
-
-    
-        const menu = document.querySelector("#navbar_mobile_container");
-        const menuBtn = document.querySelector("#navbar_mobile");
-        const heroImages = document.querySelector("#hero_images_container");
-
-        if (menuBtn) {
-            menuBtn.addEventListener("click", () => {
-                console.log("Menu button clicked");
-                menu.classList.toggle("active");
-                heroImages.classList.toggle("active");
-                document.body.classList.toggle("no-scroll");
-            });
-        } else {
-            console.error("#navbar_mobile not found");
-        }
-
-        const mobileMenuLinks = menu.querySelectorAll("#navbar_mobile_link");
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                console.log("why wont you fucking work");
-                menu.classList.remove("active");
-                heroImages.classList.remove("active");
-                document.body.classList.remove("no-scroll");
-            });
-        });
-
- 
 
         renderProjects();
 

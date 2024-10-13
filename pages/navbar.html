@@ -1,24 +1,60 @@
+<!-- NAVIGATION BAR -->
+<!-- 
+This is the navigation bar located at the top of the page that the users can use to navigate to your different pages and links!
+
+Quick Modifications Key:
+Here is a list of sections you can modify/customize! Use CTRL+F or CMD+F to find these sections to modify them!
+
+MODIFICATION SECTION: MOBILE SCREEN RESUME, GITHUB, AND LINKEDIN LINKS
+MODIFICATION SECTION: LAPTOP SCREEN RESUME, GITHUB, AND LINKEDIN LINKS
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE E-Portfolio</title>
-    <script src="./main.js"></script>
+    <script src="../main.js" defer></script>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     
 <div class="navbar">
 
-    <div id="navbar_mobile_container">
-        <div id="navbar_mobile_link">ABOUT</div>
-        <div id="navbar_mobile_link">PROJECTS</div>
-    </div>
-
     <div class="navbar_container">
+
+        <div id="navbar_mobile_container">
+            <div class="navbar_mobile_all_links">
+                <a href="index.html" id="navbar_mobile_link">ABOUT</a>
+                <a href="projects.html" id="navbar_mobile_link">PROJECTS</a>
+
+
+                <!-- MODIFICATION SECTION: MOBILE SCREEN RESUME, GITHUB, AND LINKEDIN LINKS -->
+                <!-- 
+                
+                This would be viewed on a mobile device! This is where you put your links for your resume, github, and linkedin!
+                
+                To add your personal links:
+                1. In the href section, replace the # with your link
+                Example:
+                <a href="https://www.linkedin.com/in/kaisprunger/" id="navbar_mobile_link">LINKEDIN</a>
+
+                To add a link to a pdf of your resume:
+                1. In the href section, replace the # with ../images/ and then the name of your resume (don't forget the .pdf at the end!)
+                Example:
+                <a href="../images/yourresume.pdf" id="navbar_mobile_link">RESUME</a>
+                -->
+                <a href="#" id="navbar_mobile_link">RESUME</a>
+                <a href="#" id="navbar_mobile_link">GITHUB</a>
+                <a href="#" id="navbar_mobile_link">LINKEDIN</a>
+            </div>
+        </div>
+
         <a href="index.html" id="navbar_logo"></a>
-        <button id="navbar_mobile" type="button"></button>
+
+        <button id="navbar_mobile_button" type="button"></button>
+
         <ul class="navbar_menu">
             <li class="navbar_item">
                 <a href="index.html" class="navbar_item_link">ABOUT</a>
@@ -27,10 +63,10 @@
                 <a href="projects.html" class="navbar_item_link">PROJECTS</a>
             </li>
 
-            <!-- RESUME, GITHUB, AND LINKEDIN LINKS -->
-             <!-- 
+            <!-- MODIFICATION SECTION: LAPTOP SCREEN RESUME, GITHUB, AND LINKEDIN LINKS -->
+            <!-- 
             
-             This is where you put your links for your resume, github, and linkedin!
+             This would be viewed on a laptop device! This is where you put your links for your resume, github, and linkedin!
               
              To add your personal links:
              1. In the href section, replace the # with your link
@@ -45,8 +81,7 @@
             <li class="navbar_img">
                 <a href="../images/resume.pdf" class="navbar_item_resume"></a>
             </li>
-
-             -->
+            -->
             <li class="navbar_img">
                 <a href="#" target="blank" class="navbar_item_resume"></a>
             </li>
