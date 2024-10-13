@@ -525,6 +525,10 @@ To upload and replace Gudetama with your profile picture:
         font-size: 13vw;
     }
 
+    .experiences_heading {
+        font-size: 12vw;
+    }
+
     #hero_skills, #hero_learn_more_button {
         font-size: 7vw;
     }
@@ -559,6 +563,11 @@ To upload and replace Gudetama with your profile picture:
     #navbar_mobile_link {
         font-size: 4vw;
 
+    }
+
+    .experiences_heading {
+        font-size: 8.7vh;
+        
     }
 
 }
