@@ -233,6 +233,13 @@ To upload and replace Gudetama with your profile picture:
     right: -5vw; 
     z-index: 1; 
 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+
+.hero_profile_picture:hover {
+    transform: translateY(-5px);
 }
 
 .hero_summary_container {
@@ -331,7 +338,13 @@ To upload and replace Gudetama with your profile picture:
     width: 40vw;
     border-radius: 25px;
     background-size: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
 
+#about_image_carousel:hover {
+    transform: translateY(-5px);
 }
 
 .about_image_carousel_buttons {
@@ -368,22 +381,22 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-.projects_heading {
+.projects_heading, .experiences_heading {
     color: var(--sunset);
     font-size: 9vh;
     font-family: heading-font;
 
 }
 
-.projects_description {
+.projects_description, .experiences_description {
     color: var(--antique-white);
-    font-size: 2vh;
+    font-size: 2.3vh;
     font-family: body-font;
     margin-top: 2vh;
 
 }
 
-.projects_container {
+.projects_container, .experiences_container {
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -392,7 +405,7 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-.projects_grid_container {
+.projects_grid_container, .experiences_grid_container {
     padding: 20px;
 }
 
@@ -402,15 +415,21 @@ To upload and replace Gudetama with your profile picture:
     gap: 20px;
 }
 
-.project {
-    background-color: var(--ghost-white);
+#experiencesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+}
+
+.project, .experience {
+    background-color: var(--antique-white);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
-.project:hover {
+.project:hover, .experience:hover {
     transform: translateY(-5px);
 }
 
@@ -421,7 +440,7 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-.project_info {
+.project_info, .experience_info {
     padding: 20px;
 }
 
@@ -433,14 +452,30 @@ To upload and replace Gudetama with your profile picture:
     font-family: subheading-font;
 }
 
-.project_description {
+.experience_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: var(--night-sky);
+    font-family: subheading-font;
+}
+
+.experience_timeline {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: var(--night-sky);
+    font-family: subheading-font;
+}
+
+.project_description, .experience_description {
     font-size: 0.9rem;
     color: var(--outer-space);
     margin-bottom: 10px;
     font-family: body-font;
 }
 
-.project_skills {
+.project_skills, .experience_skills{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -448,7 +483,7 @@ To upload and replace Gudetama with your profile picture:
 
 .skill {
     font-size: 0.8rem;
-    background-color: var(--powder-blue);
+    background-color: var(--burnt-sienna);
     color: var(--night-sky);
     padding: 3px 8px;
     border-radius: 4px;
@@ -678,15 +713,26 @@ To upload and replace Gudetama with your profile picture:
 
     }
 
-    .projects_container {
+    .projects_container  {
         padding: 10vw;
     
+    }
+
+    .experiences_container {
+        padding: 7vw;
     }
 
     #projectsGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
+    }
+
+    #experiencesGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+
     }
 
     

@@ -1,0 +1,82 @@
+<!-- EXPERIENCE PAGE -->
+<!-- 
+This is where the users can view a summary of your experiences/skills! In this file, you can edit the summary/introduction to your experience/skills section, but in order to actually edit/add your experiences, navigate over to the main.js file!
+
+Quick Modifications Key:
+Here is a list of sections you can modify/customize! Use CTRL+F or CMD+F to find these sections to modify them!
+
+MODIFICATION SECTION: INTRODUCTION TO YOUR EXPERIENCES
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE E-Portfolio - Experiences</title>
+    <script src="../main.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="navbar"></div> 
+
+    <div class="experiences">
+        <div class="experiences_container">
+            <div class="experiences_description_container">
+
+                <!-- MODIFICATION SECTION: INTRODUCTION TO YOUR EXPERIENCES -->
+                <!-- 
+                This is where a quick summary/introduction regarding your experiences will go!
+
+                To replace it, just cut the current paragraph and write/paste in your own!
+                -->
+                <div class="experiences_heading">EXPERIENCE</div>
+                <div class="experiences_description">I’ve had a lot of experiences, but honestly, I’m just too tired to list them all. Whether it’s being cracked open or served on toast, life’s just a series of moments where I try to relax. At the end of the day, I’m all about staying cozy and taking it easy—because, what’s the rush?</div>
+            </div>
+            
+            <div id="experiencesGrid"></div>
+           
+        </div>
+    </div>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector("#navbar").innerHTML = data;
+                    
+                    const menuBtn = document.querySelector("#navbar_mobile_button");
+                    const mobileMenu = document.querySelector("#navbar_mobile_container");
+
+                    menuBtn.addEventListener("click", function() {
+                        mobileMenu.classList.toggle("active");
+                        document.body.classList.toggle("no-scroll");
+
+                    });
+
+                    const mobileMenuLinks = menu.querySelectorAll("#navbar_mobile_link");
+                    
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener("click", () => {
+                            menu.classList.remove("active");
+                            document.body.classList.remove("no-scroll");
+
+                        });
+                    });
+                
+                
+                })
+                .catch(error => console.error("Error loading navbar:", error));
+
+            if (typeof renderExperiences === "function") {
+                renderExperiences();
+            } else {
+                console.error("Error loading renderExperiences");
+            }
+        });
+    </script>
+</body>
+</html>

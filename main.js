@@ -8,6 +8,7 @@ Here is a list of sections you can modify/customize! Use CTRL+F or CMD+F to find
 MODIFICATION SECTION: SKILLS SECTION
 MODIFICATION SECTION: IMAGES SECTION
 MODIFICATION SECTION: PROJECTS SECTION
+MODIFICATION SECTION: EXPERIENCES SECTION
 
 */
 
@@ -99,6 +100,40 @@ let projects = [
     }
 ];
 
+// MODIFICATION SECTION: EXPERIENCES SECTION
+/* 
+This is where your experiences go! They show up as boxes on the Experiences page! Each of them contains a title, a description, a timeline, and a list of skills you used during the experience!
+
+Add and delete experiences as needed by:
+1. In the title section of your specific experience, change the title as needed!
+2. In the description section of your specific experience, change the description as needed!
+3. In the timeline section of your specific experience, change the description as needed!
+4. In the skills section of your specific experience, add or change skills you used by adding a comma to the last skill listed and then adding your skill in quotations
+*/
+let experiences = [
+    {
+        title: "Experience 1",
+        timeline: "Date X - Date Y",
+        description: "A huge description of Experience 1.",
+        skills: ["Skill1", "Skill2", "Skill3"],
+    },
+    {
+        title: "Experience 2",
+        timeline: "Date X - Date Y",
+        description: "A huge description of Experience 2.",
+        skills: ["Skill1", "Skill2", "Skill3"],
+
+    },
+    {
+        title: "Experience 3",
+        timeline: "Date X - Date Y",
+        description: "A huge description of Experience 3.",
+        skills: ["Skill1", "Skill2", "Skill3"],
+
+    }
+
+];
+
 function createProjectElement(project) {
     const projectElement = document.createElement("div");
     projectElement.className = "project";
@@ -128,6 +163,37 @@ function renderProjects() {
     projects.forEach(project => {
         const projectElement = createProjectElement(project);
         projectsGrid.appendChild(projectElement);
+    });
+}
+
+function createExperienceElement(experience) {
+    const experienceElement = document.createElement("div");
+    experienceElement.className = "experience";
+
+    experienceElement.innerHTML = `
+        <div class="experience_info">
+            <h3 class="experience_title">${experience.title}</h3>
+            <h2 class="experience_timeline">${experience.timeline}</h2>
+            <p class="experience_description">${experience.description}</p>
+            <div class="experience_skills">
+                ${experience.skills.map(skill => `<span class="skill">${skill}</span>`).join("")}
+            </div>
+        </div>
+    `;
+
+    return experienceElement;
+}
+
+function renderExperiences() {
+    const experiencesGrid = document.getElementById("experiencesGrid");
+    if (!experiencesGrid) {
+        console.error("Experiences grid container not found");
+        return;
+    }
+
+    experiences.forEach(experience => {
+        const experienceElement = createExperienceElement(experience);
+        experiencesGrid.appendChild(experienceElement);
     });
 }
 
@@ -193,5 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         renderProjects();
+
+        renderExperiences();
 
 });
