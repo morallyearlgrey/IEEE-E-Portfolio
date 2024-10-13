@@ -31,7 +31,7 @@ If you intend to use this template as a reference to create your own e-portfolio
 If you have any questions or need further assistance, feel free to reach out to:
 
 **Kai Sprunger**  
-Email: kaisprunger@gmail.com
-LinkedIn: https://www.linkedin.com/in/kaisprunger/
+- Email: kaisprunger@gmail.com
+- LinkedIn: https://www.linkedin.com/in/kaisprunger/
 
 Happy coding and best of luck with your e-portfolio!
