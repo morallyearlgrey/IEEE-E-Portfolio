@@ -534,7 +534,7 @@ To upload and replace Gudetama with your profile picture:
 
     .navbar_mobile_all_links {
         margin-top: 18vh;
-        gap: 10vh;
+        gap: 7vh;
         
         margin-left: 20vw;
 
@@ -550,7 +550,7 @@ To upload and replace Gudetama with your profile picture:
 @media (max-width: 768px) and (min-width: 480px) {
     .navbar_mobile_all_links {
         margin-top: 20vh;
-        gap: 7vh;
+        gap: 5vh;
         margin-left: 12vw;
 
     }
