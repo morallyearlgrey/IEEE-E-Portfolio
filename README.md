@@ -22,6 +22,18 @@ To get started with your e-portfolio, follow these simple steps:
    - `styles.css`
    - `main.js`
 
+## Domain Hosting
+
+Once your e-portfolio is ready, you'll need to host it online. Here are some **free hosting options** you can consider:
+
+- **GitHub Pages**: A popular choice for hosting static websites directly from your GitHub repository. You can easily deploy your e-portfolio by pushing your code to a GitHub repository and enabling GitHub Pages in the repository settings. This option is great for beginners and allows you to use a custom domain if you have one.
+  
+- **Netlify**: Another excellent option for hosting static sites, offering easy integration with GitHub. Netlify provides features like continuous deployment, custom domains, and free SSL certificates.
+
+- **Vercel**: A platform that allows you to host static sites and serverless functions effortlessly. Vercel also integrates with GitHub for continuous deployment and provides a straightforward setup.
+
+- **Firebase Hosting**: Offers a reliable hosting solution with a free tier that is suitable for hosting web apps. Firebase Hosting is easy to set up and comes with features like global CDN and SSL.
+
 ## Notes for Developers
 
 If you intend to use this template as a reference to create your own e-portfolio website, it is highly recommended to use **React.js** for building more dynamic and responsive applications. This template was not written in React.js for simplicity and user-friendliness, making it accessible to users with varying levels of coding experience.
