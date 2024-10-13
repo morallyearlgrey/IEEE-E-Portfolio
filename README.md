@@ -13,7 +13,7 @@ Hello! This is an E-Portfolio Website Template designed specifically for IEEE me
 ## Getting Started
 To get started with your e-portfolio, follow these simple steps:
 
-1. **Clone the GitHub Repository**: To get your own copy of this template, you can clone it! On the top right corner, click the blue "Use this template" button and then "Create a new repository" and then name it whatever you would like.
+1. **Clone the GitHub Repository**: To get your own copy of this template, you can clone it! On the top right corner, click the blue "Use this template" button. Then, click "Create a new repository." Name the repository whatever you like. Ensure that if you're using a free GitHub account your repository is public, not private.
 
 2. **Make Modifications to the Template**: This template is designed to be user-modifiable and customizable. You can modify the contents of the following files directly on GitHub:
    - `index.html` (Inside of the `pages` folder)
