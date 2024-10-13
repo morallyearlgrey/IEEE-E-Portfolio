@@ -19,6 +19,7 @@ To get started with your e-portfolio, follow these simple steps:
    - `index.html` (Inside of the `pages` folder)
    - `navbar.html` (Inside of the `pages` folder)
    - `project.html` (Inside of the `pages` folder)
+   - `experience.html` (Inside of the `pages` folder)
    - `styles.css`
    - `main.js`
    
