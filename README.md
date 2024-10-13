@@ -20,7 +20,7 @@ To get started with your e-portfolio, follow these simple steps:
    - `styles.css`
    - `main.js`
    
-   Read the commented-out instructions located in each file carefully. Edit the sections labeled `MODIFICATION SECTION` in those files listed above to customize your e-portfolio. To edit the sections, follow these instructions:
+   Read the commented-out instructions located in each file carefully. Edit the sections labeled `MODIFICATION SECTION` in those files listed above to customize your e-portfolio. To edit the files, follow these instructions:
 
    1) **Navigate to your  Repository**: Go to the GitHub page for your e-portfolio repository.
    2) **Open a File**: Click on the file you wish to edit (i.e. index.html, styles.css, etc).
