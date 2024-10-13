@@ -3,7 +3,7 @@
 
 Hello! This is an E-Portfolio Website Template designed specifically for IEEE members at the University of Central Florida! This template provides a user-friendly starting point for creating your own personalized e-portfolio. 
 
-> __**No coding experience is required at all to use this template and host your own personal portfolio website!**__
+> __**No coding experience needed! Without even coding a single line, you can modify this template and host your own portfolio website!!!**__
 
 ## Features
 - **Customizable Design**: Easily modify the design elements to reflect your personal style.
