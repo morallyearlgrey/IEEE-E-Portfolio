@@ -39,6 +39,7 @@ To get started with your e-portfolio, follow these simple steps:
 
 ## Instructions for Uploading Fonts and Images
    **Uploading Fonts**: You can upload any custom fonts to the `fonts` folder. Ensure that the font files are in `.ttf` format.
+   
    **Uploading Images**: Place your images in the `images` folder. This includes profile pictures, project images, or any other visuals you wish to display.
 
 ## Domain Hosting Other Than Github
