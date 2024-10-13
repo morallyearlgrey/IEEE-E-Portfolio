@@ -469,6 +469,14 @@ To upload and replace Gudetama with your profile picture:
     font-family: subheading-font;
 }
 
+.experience_organization{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: var(--night-sky);
+    font-family: subheading-font;
+}
+
 .project_description, .experience_description {
     font-size: 0.9rem;
     color: var(--outer-space);

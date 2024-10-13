@@ -107,18 +107,21 @@ This is where your experiences go! They show up as boxes on the Experiences page
 Add and delete experiences as needed by:
 1. In the title section of your specific experience, change the title as needed!
 2. In the description section of your specific experience, change the description as needed!
-3. In the timeline section of your specific experience, change the description as needed!
-4. In the skills section of your specific experience, add or change skills you used by adding a comma to the last skill listed and then adding your skill in quotations
+3. In the organization section of your specific experience, change the organization as needed!
+4. In the timeline section of your specific experience, change the description as needed!
+5. In the skills section of your specific experience, add or change skills you used by adding a comma to the last skill listed and then adding your skill in quotations
 */
 let experiences = [
     {
         title: "Experience 1",
+        organization: "Organization",
         timeline: "Date X - Date Y",
         description: "A huge description of Experience 1.",
         skills: ["Skill1", "Skill2", "Skill3"],
     },
     {
         title: "Experience 2",
+        organization: "Organization",
         timeline: "Date X - Date Y",
         description: "A huge description of Experience 2.",
         skills: ["Skill1", "Skill2", "Skill3"],
@@ -126,6 +129,7 @@ let experiences = [
     },
     {
         title: "Experience 3",
+        organization: "Organization",
         timeline: "Date X - Date Y",
         description: "A huge description of Experience 3.",
         skills: ["Skill1", "Skill2", "Skill3"],
@@ -173,6 +177,7 @@ function createExperienceElement(experience) {
     experienceElement.innerHTML = `
         <div class="experience_info">
             <h3 class="experience_title">${experience.title}</h3>
+            <h2 class="experience_organization">${experience.organization}</h2>
             <h2 class="experience_timeline">${experience.timeline}</h2>
             <p class="experience_description">${experience.description}</p>
             <div class="experience_skills">
