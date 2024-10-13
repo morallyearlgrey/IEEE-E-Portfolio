@@ -11,16 +11,33 @@ Hello! This is an E-Portfolio Website Template designed specifically for IEEE me
 ## Getting Started
 To get started with your e-portfolio, follow these simple steps:
 
-1. **Upload Fonts**: You can upload any custom fonts to the `fonts` folder. Ensure that the font files are in `.ttf` format.
-   
-2. **Upload Images**: Place your images in the `images` folder. This includes profile pictures, project images, or any other visuals you wish to display.
+1. **Clone the GitHub Repository**: To get your own copy of this template, you can clone it! On the top right corner, click "Use this template" and then "Create a new repository" and then name it whatever you would like.
 
-3. **Modify Content**: Read the commented-out instructions located in each file carefully. Edit the sections labeled `MODIFICATION SECTION` in the following files to customize your e-portfolio:
+2. 3. **Modify Content**: 
    - `index.html`
    - `navbar.html`
    - `project.html`
    - `styles.css`
    - `main.js`
+
+3. **Make Modifications to the Template**: If you prefer to make changes directly on GitHub, read this section carefully! You can modify the contents of the following files:
+   - `index.html`
+   - `navbar.html`
+   - `project.html`
+   - `styles.css`
+   - `main.js`
+   
+   Read the commented-out instructions located in each file carefully. Edit the sections labeled `MODIFICATION SECTION` in those files listed above to customize your e-portfolio. To edit the sections, follow these instructions:
+
+   1) Navigate to your  Repository: Go to the GitHub page for your e-portfolio repository.
+   2) Open a File: Click on the file you wish to edit (i.e. index.html, styles.css, etc).
+   3) Edit the File: Click the pencil icon (✏️) in the upper right corner to edit the file.
+   4) Make Your Changes: You can make your changes directly in the GitHub editor.
+   5) Commit Changes: Scroll down to the "Commit changes" section, enter a brief description of your changes, and click the "Commit changes" button to save your edits.
+  
+## Instructions for Uploading Fonts and Images
+   **Uploading Fonts**: You can upload any custom fonts to the `fonts` folder. Ensure that the font files are in `.ttf` format.
+   **Uploading Images**: Place your images in the `images` folder. This includes profile pictures, project images, or any other visuals you wish to display.
 
 ## Domain Hosting
 
