@@ -22,22 +22,29 @@ To get started with your e-portfolio, follow these simple steps:
    
    Read the commented-out instructions located in each file carefully. Edit the sections labeled `MODIFICATION SECTION` in those files listed above to customize your e-portfolio. To edit the sections, follow these instructions:
 
-   1) Navigate to your  Repository: Go to the GitHub page for your e-portfolio repository.
-   2) Open a File: Click on the file you wish to edit (i.e. index.html, styles.css, etc).
-   3) Edit the File: Click the pencil icon (✏️) in the upper right corner to edit the file.
-   4) Make Your Changes: You can make your changes directly in the GitHub editor.
-   5) Commit Changes: Scroll down to the "Commit changes" section, enter a brief description of your changes, and click the "Commit changes" button to save your edits.
-  
+   1) **Navigate to your  Repository**: Go to the GitHub page for your e-portfolio repository.
+   2) **Open a File**: Click on the file you wish to edit (i.e. index.html, styles.css, etc).
+   3) **Edit the File**: Click the pencil icon (✏️) in the upper right corner to edit the file.
+   4) **Make Your Changes**: You can make your changes directly in the GitHub editor.
+   5) **Commit Changes**: Scroll down to the "Commit changes" section, enter a brief description of your changes, and click the "Commit changes" button to save your edits.
+
+3. **Hosting Your E-Portfolio via GitHub Pages**: Once your e-portfolio is ready, you can host it online using GitHub Pages. Here’s how:
+
+   1) **Go to Repository Settings**: Navigate to your repository on GitHub and click on the "Settings" tab.
+   2) **Scroll to the GitHub Pages Section**: Scroll down to the "Pages" section.
+   3) **Select the Source Branch**: Under "Source," select the branch you want to use for GitHub Pages (usually main) and choose the / (root) folder.
+   4) **Save Changes**: Click "Save" to apply your settings.
+   5) **Access Your Site**: After a few minutes, your site should be available at https://<username>.github.io/<repository-name>/. Replace <username> with your GitHub username and <repository-name> with your repository name.
+
+
 ## Instructions for Uploading Fonts and Images
    **Uploading Fonts**: You can upload any custom fonts to the `fonts` folder. Ensure that the font files are in `.ttf` format.
    **Uploading Images**: Place your images in the `images` folder. This includes profile pictures, project images, or any other visuals you wish to display.
 
-## Domain Hosting
+## Domain Hosting Other Than Github
 
-Once your e-portfolio is ready, you'll need to host it online. Here are some **free hosting options** you can consider:
+If you don't want to host your lovely e-portfolio website on GitHub, no worries! Here are some **free hosting options** other than GitHub you can consider:
 
-- **GitHub Pages**: A popular choice for hosting static websites directly from your GitHub repository. You can easily deploy your e-portfolio by pushing your code to a GitHub repository and enabling GitHub Pages in the repository settings. This option is great for beginners and allows you to use a custom domain if you have one.
-  
 - **Netlify**: Another excellent option for hosting static sites, offering easy integration with GitHub. Netlify provides features like continuous deployment, custom domains, and free SSL certificates.
 
 - **Vercel**: A platform that allows you to host static sites and serverless functions effortlessly. Vercel also integrates with GitHub for continuous deployment and provides a straightforward setup.
