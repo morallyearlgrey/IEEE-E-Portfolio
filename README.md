@@ -32,6 +32,7 @@ If you have any questions or need further assistance, feel free to reach out to:
 
 **Kai Sprunger**  
 Email: kaisprunger@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/kaisprunger/
 
 Happy coding and best of luck with your e-portfolio!
