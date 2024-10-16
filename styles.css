@@ -535,7 +535,7 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-@media (max-width: 479px) {
+@media (max-width: 499px) {
     .hero_name, .about_heading, .projects_heading {
         font-size: 13vw;
     }
@@ -567,7 +567,7 @@ To upload and replace Gudetama with your profile picture:
 
 }
 
-@media (max-width: 768px) and (min-width: 480px) {
+@media (max-width: 768px) and (min-width: 500px) {
     .navbar_mobile_all_links {
         margin-top: 20vh;
         gap: 5vh;
