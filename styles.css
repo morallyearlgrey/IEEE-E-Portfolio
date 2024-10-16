@@ -541,7 +541,7 @@ To upload and replace Gudetama with your profile picture:
         font-size: 7vw;
     }
 
-    .hero_summary, .about_body, .projects_description {
+    .hero_summary, .about_body, .projects_description, .experience_description {
         font-size: 4vw;
     }
 
